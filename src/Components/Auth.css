@@ -1,34 +1,14 @@
-html{
-  overflow-x: hidden;
-  box-sizing: content-box;
-  
+/* FANCY EFFECTS */
+
+.text-effects{
+  word-break: break-all;
 }
 
-.header{
-  height: 20vh;
-  background-color: #FF70A6;
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  font-weight: 700;
-  color: purple;
-  font-size: 4rem;
-}
-
-.Auth{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 125vh;
-  position: relative;
-  background-image: linear-gradient(to left top, #FF9770 0%, #FFD670 50%, #E9FF70 100%)
-}
-
-.Auth input{
-  font-size: 0.5rem;
-  width: 20%;
-  transition: all 1500ms
+.ellipsis{
+  max-width: 250px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .login-hold{
@@ -44,7 +24,74 @@ html{
   box-shadow: black 0 0 30px;
   background-image: url('https://previews.123rf.com/images/decorwithme/decorwithme1707/decorwithme170700036/81306492-pizza-cartoon-character-modern-vector-template-set-of-mascot-illustrations-gift-images-of-a-pizza-sl.jpg');
   background-size: contain;
+  margin-top: 10vh;
 }
+
+/* FLEXBOX */
+
+.flex-wrap{
+  display: flex;
+  max-width: 50%;
+  flex-wrap: wrap;
+  border: 10px dotted pink
+}
+
+/* PSEUDO SELECTORS */
+
+.login-button:disabled{
+  background: red
+}
+
+.login-hold>.login-input:focus{
+  width: 100%;
+  font-size: 2rem;
+}
+
+.login-button:hover{
+  width: 100%;
+  font-size: 4rem;
+  padding: 25px;
+}
+
+.wrap-box:nth-child(even){
+  background: blue;
+}
+
+/* BOX MODEL */
+/* SEE LOGIN HOLD DIV */
+
+html{
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* FLOAT/DISPLAY */
+
+.floatleft{
+  float: left;
+  border: 1px solid black
+}
+
+.floatright{
+  float: right;
+  border: 1px solid black;
+}
+
+/* FONT/BACKGROUND */
+/* SEE LOGIN HOLD DIV */
+.header{
+  height: 20vh;
+  background-color: #FF70A6;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  font-weight: 700;
+  color: purple;
+  font-size: 4rem;
+}
+
+/* POSITION */
+/* SEE HEADER */
 
 .footer{
   position: absolute;
@@ -54,25 +101,17 @@ html{
   background: #FF70A6;
 }
 
-.login-button:disabled{
-  background: red
+.Auth{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 125vh;
+  position: relative;
+  background-image: linear-gradient(to left top, #FF9770 0%, #FFD670 50%, #E9FF70 100%)
 }
 
-.login-button{
-  background: tomato;
-  transition: all 2000ms
-}
-
-
-.login-button:hover{
-  width: 100%;
-  font-size: 4rem;
-}
-
-.login-hold>.login-input:focus{
-  width: 100%;
-  font-size: 2rem;
-}
+/* SELECTORS */
 
 #id{
   min-width: 100%;
@@ -85,40 +124,24 @@ html{
   font-weight: 700
 }
 
-.floatleft{
-  float: left;
-  border: 1px solid black
+.Auth input{
+  font-size: 0.5rem;
+  width: 20%;
+  transition: all 1500ms
 }
 
-.floatright{
-  float: right;
-  border: 1px solid black
-}
-
-.text-effects{
-  word-break: break-all;
-}
-
-.ellipsis{
-  max-width: 250px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.flex-wrap{
-  display: flex;
-  max-width: 50%;
-  flex-wrap: wrap;
-  border: 10px dotted pink
-}
-
-.wrap-box:nth-child(even){
-  background: blue;
+.login-button{
+  background: tomato;
+  transition: all 2000ms
 }
 
 .wrap-box{
   border: 5px dashed greenyellow;
   min-height: 25px;
-  min-width: 25px
+  min-width: 25px;
+  transition: all 1s
+}
+
+p + span{
+  font-weight: 1000
 }
