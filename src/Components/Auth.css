@@ -1,0 +1,124 @@
+html{
+  overflow-x: hidden;
+  box-sizing: content-box;
+  
+}
+
+.header{
+  height: 20vh;
+  background-color: #FF70A6;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  font-weight: 700;
+  color: purple;
+  font-size: 4rem;
+}
+
+.Auth{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 125vh;
+  position: relative;
+  background-image: linear-gradient(to left top, #FF9770 0%, #FFD670 50%, #E9FF70 100%)
+}
+
+.Auth input{
+  font-size: 0.5rem;
+  width: 20%;
+  transition: all 1500ms
+}
+
+.login-hold{
+  width: 50vw;
+  min-height: 40vh;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-image: linear-gradient(to left top, #FF9770 0%, #FFD670 50%, #E9FF70 100%);
+  box-shadow: black 0 0 30px;
+  background-image: url('https://previews.123rf.com/images/decorwithme/decorwithme1707/decorwithme170700036/81306492-pizza-cartoon-character-modern-vector-template-set-of-mascot-illustrations-gift-images-of-a-pizza-sl.jpg');
+  background-size: contain;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 10vh;
+  background: #FF70A6;
+}
+
+.login-button:disabled{
+  background: red
+}
+
+.login-button{
+  background: tomato;
+  transition: all 2000ms
+}
+
+
+.login-button:hover{
+  width: 100%;
+  font-size: 4rem;
+}
+
+.login-hold>.login-input:focus{
+  width: 100%;
+  font-size: 2rem;
+}
+
+#id{
+  min-width: 100%;
+  border: 5px solid blue;
+  background: rgba(255, 255, 255, 0.603);
+  min-height: 25px;
+}
+
+#id>p{
+  font-weight: 700
+}
+
+.floatleft{
+  float: left;
+  border: 1px solid black
+}
+
+.floatright{
+  float: right;
+  border: 1px solid black
+}
+
+.text-effects{
+  word-break: break-all;
+}
+
+.ellipsis{
+  max-width: 250px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.flex-wrap{
+  display: flex;
+  max-width: 50%;
+  flex-wrap: wrap;
+  border: 10px dotted pink
+}
+
+.wrap-box:nth-child(even){
+  background: blue;
+}
+
+.wrap-box{
+  border: 5px dashed greenyellow;
+  min-height: 25px;
+  min-width: 25px
+}
