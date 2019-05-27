@@ -3,6 +3,7 @@ import {Switch, Route} from 'react-router-dom'
 import Auth from './Components/Auth'
 import Nav from './Components/Nav'
 import Dashboard from './Components/Dashboard'
+import Semantic from './Components/Semantic'
 
 export default (
   <Switch>
@@ -11,6 +12,7 @@ export default (
       <Nav>
         <Switch>
           <Route path='/:id/dashboard' component={Dashboard}/>
+          <Route path='/:id/semantic' component={Semantic}/>
         </Switch>
       </Nav>
     )}/>

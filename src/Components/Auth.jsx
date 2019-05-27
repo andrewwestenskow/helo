@@ -32,7 +32,9 @@ class Auth extends Component {
 
     try {
       let user = await axios.post('/auth/login', { username, password })
-      this.props.history.push(`${user.data.helo_login_id}/dashboard`)
+
+      console.log(user.data)
+      this.props.history.push(`${user.data.helo_users_id}/dashboard`)
     } catch (error) {
       console.log(error)
     }
