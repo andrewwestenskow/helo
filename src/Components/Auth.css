@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
 html{
   font-family: 'Indie Flower', cursive;
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 /* FANCY EFFECTS */

@@ -32,21 +32,11 @@ class Auth extends Component {
 
     try {
       let user = await axios.post('/auth/login', { username, password })
-
-      console.log(user.data)
       this.props.history.push(`${user.data.helo_users_id}/dashboard`)
     } catch (error) {
       console.log(error)
     }
   }
-
-  toggleButtons = () => {
-    this.setState({
-      toggleButtons: !this.state.toggleButtons
-    })
-  }
-
-
 
   render() {
     return (

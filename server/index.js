@@ -16,6 +16,8 @@ app.use(session({
 app.post('/auth/register', Ctrl.register)
 app.post('/auth/login', Ctrl.login)
 app.get('/auth/logout', Ctrl.logout)
+app.get('/api/articles', Ctrl.getArticles)
+app.get('/api/user', Ctrl.getUser)
 
 
 massive(CONNECTION_STRING).then(db => {

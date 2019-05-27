@@ -1,5 +1,25 @@
 .Nav{
   min-height: 100vh;
-  width: 12vw;
+  width: 15vw;
   background-image: linear-gradient(to left top, #FF9770 0%, #FFD670 50%, #E9FF70 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.nav-hold{
+  display: flex;
+}
+
+.nav-list > li{
+  margin: 50px 0;
+}
+
+.profile-image{
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
 }

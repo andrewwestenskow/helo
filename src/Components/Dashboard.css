@@ -1,0 +1,5 @@
+.Dashboard{
+  min-height: 100vh;
+  min-width: 85vw;
+  background-image: linear-gradient(to right bottom, #FF9770 0%, rgb(112, 255, 119) 50%, rgb(255, 112, 112) 100%);
+}
