@@ -57,7 +57,7 @@ module.exports={
   },
 
   getArticles: async (req, res) => {
-    const {db} = req.app.get('db')
+    const db = req.app.get('db')
 
     let articles = await db.getArticles()
 

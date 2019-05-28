@@ -1,0 +1,55 @@
+.s-footer{
+  height: 250px;
+  background: blue;
+  width: 85vw;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+}
+
+.sonic-hold{
+  width: 100vw;
+  height: 635px;
+}
+
+.sonic-hold>img{
+  width: 100%;
+  height: 100%;
+}
+
+.semantic{
+  background-image: linear-gradient(to left top, #FF9770 0%, #FFD670 50%, #E9FF70 100%);
+  position: relative;
+  width: 85vw;
+}
+
+.images{
+  margin-bottom: 250px;
+}
+
+.images>img{
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}
+
+.other{
+  background-image: linear-gradient(to left top, #FF9770 0%, #FFD670 50%, #E9FF70 100%);
+  position: relative;
+  width: 85vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+}

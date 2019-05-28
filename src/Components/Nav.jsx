@@ -13,9 +13,6 @@ class Nav extends Component {
 
   componentDidMount() {
     this.props.requestUser()
-    if (!this.props.user) {
-      this.logout()
-    }
   }
 
   logout = () => {

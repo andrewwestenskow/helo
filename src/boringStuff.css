@@ -1,0 +1,12 @@
+.black-box{
+  background: black;
+}
+
+.red-box{
+  background: red;
+}
+
+#box{
+  height: 500px;
+  width: 500px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- EVERYTHING THAT DOESN'T APPEAR ON THE PAGE -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href='./boringStuff.css'>
+  <title>HTML COMPETENCIES</title>
+</head>
+<body>
+  <!-- EVERYTHING THAT APPEARS ON THE PAGE -->
+  <p>THIS IS THE BORING STUFF</p>
+  <div id='box' class='black-box'></div>
+  <button onclick="changeColor()">Change the color</button>
+
+  <script>
+    const box = document.getElementById('box')
+
+    const changeColor = () => {
+      // console.dir(box.classList)
+      if (box.classList[0] === 'black-box'){
+        box.classList.add('red-box')
+        box.classList.remove('black-box')
+      } else if (box.classList[0] === 'red-box'){
+        box.classList.add('black-box')
+        box.classList.remove('red-box')
+      }
+    }
+    
+  </script>
+</body>
+</html>

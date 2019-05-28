@@ -12,6 +12,7 @@
 
 .nav-hold{
   display: flex;
+  width: 100vw;
 }
 
 .nav-list > li{

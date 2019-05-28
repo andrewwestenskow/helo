@@ -36,6 +36,12 @@ function reducer(state=initialState, action) {
       return {...state, picLoading: false, user: action.payload.data}
     case `${REQUEST_USER}_REJECTED`: 
       return {...state, picLoading: false}
+    case `${REQUEST_ARTICLES}_PENDING`:
+      return {...state, artLoading: true}
+    case `${REQUEST_ARTICLES}_FULFILLED`:
+      return {...state, artLoading: false, articles: action.payload.data}
+    case `${REQUEST_ARTICLES}_REJECTED`: 
+      return {...state, artLoading: false}
     default: 
       return {...state}
   }

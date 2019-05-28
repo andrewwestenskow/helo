@@ -4,6 +4,7 @@ import Auth from './Components/Auth'
 import Nav from './Components/Nav'
 import Dashboard from './Components/Dashboard'
 import Semantic from './Components/Semantic'
+import Other from './Components/Other'
 
 export default (
   <Switch>
@@ -13,6 +14,7 @@ export default (
         <Switch>
           <Route path='/:id/dashboard' component={Dashboard}/>
           <Route path='/:id/semantic' component={Semantic}/>
+          <Route path='/:id/other' component={Other}/>
         </Switch>
       </Nav>
     )}/>
