@@ -36,9 +36,9 @@ class Nav extends Component {
 
             <li><Link to={`/${id}/semantic`}>Semantic HTML & Redux</Link></li>
             <li><Link to={`/${id}/other`}>Other HTML Competencies</Link></li>
-            <li><Link to={`${id}/server`}>Server Competencies</Link></li>
+            <li><Link to={`/${id}/server`}>Server Competencies</Link></li>
 
-            <li onClick={this.logout}>Log Out</li>
+            <li style={{cursor: 'pointer'}} onClick={this.logout}>Log Out</li>
           </ul>
         </nav>
         {this.props.children}

@@ -68,5 +68,22 @@ module.exports={
     const {user} = req.session
 
     res.status(200).send(user)
+  },
+
+  getFavoritePicture: async (req, res) => {
+    const db = req.app.get('db')
+    const {username} = req.query
+
+    let image = await db.getFavoritePicture([username])
+
+    res.status(200).send(image[0])
+  },
+
+  getFavoriteWords: async (req, res) => {
+    const db = req.app.get('db')
+    const {username} = req.query
+
+    let words = await db.getFavoriteWords([username])
+    res.status(200).send(words)
   }
 }
