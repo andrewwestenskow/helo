@@ -1,5 +1,6 @@
-select * from favorite_words
-join words
-on favorite_words.words_id = words.words_id
-where helo_users_id = 
-(select helo_users_id from helo_users where username = ($1))
+select word from words
+join favorite_words
+on words.words_id = favorite_words.words_id
+join helo_users
+on favorite_words.helo_users_id = helo_users.helo_users_id
+where helo_users.username = ($1)

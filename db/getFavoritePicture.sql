@@ -1,4 +1,3 @@
 select * from favorite_picture
-join helo_users
-on favorite_picture.helo_users_id = helo_users.helo_users_id
-where helo_users.username = ($1)
+where helo_users_id =
+(select helo_users_id from helo_users where helo_users.username  = ($1))
